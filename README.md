@@ -15,5 +15,27 @@ Veri setinden istenmeyen gürültüyü ve aykırı değerleri kaldırmak için m
 D1 de veri seti dengesiz. D2 de ise smote yöntemi ile veri seti dengeli  hale getirilmiş.
 
 
-# Grid Search Kullanarak Algoritmalara Uygun Hiperparametreleri Bulma
+# Grid Search 
 Grid search ile hiper parametre seçim işleminde; belirlenen aralıkta bulunan tüm değerlerin kombinasyonları için ağ eğitilip sonuçlar gözlenir duruma göre en iyi kombinasyon hiper parametre grubu olarak seçilir. Bu çalışmada D1 ve D2 için D1-GridSeaech ve D2-GridSearch dosyalarında grid search yöntemi ile en iyi hiperparametreler bulundu.
+
+
+# MODEL OLUŞTURMA
+Veri seti %80 eğitim ve %20 test verisi olarak bölünür. Bölme işleminden sonra, modeli eğitmek için çeşitli sınıflandırma algoritmaları kullanılır. Bu çalışmada Logistic Regresyon , Decision Tree , Gaussian NB , Bernoulli NB , Random Forest , Gredient Boosting , XG Boost , SVM , KNN ve MLP algoritmaları ile modeller oluşturulmuştur.
+
+
+# SONUÇ 
+![image](https://user-images.githubusercontent.com/96024765/166563070-19d6c160-05e1-4c15-8f62-11abce371b1f.png)
+![image](https://user-images.githubusercontent.com/96024765/166563100-7b6ab08e-8999-4204-b552-36481992fb17.png)
+
+   Bu çalışmada dengeli ve dengesiz olmak üzere veri setinin iki farklı versiyonu üzerinde çalışılmıştır.  Dengesiz olan veri setinde accuracy değerleri daha yüksek gözükse de overfitting(ezberleme) problemi meydana gelmiştir. Bu nedenle dengeli olan veri setindeki sonuçlar dikkate alınacaktır. Bar grafiğinde gözüktüğü gibi grid search yöntemi ile uygun hiperparametreleri bulunca model başarısı artmıştır. Sonuçlar değerlendikten sonra en yüksek doğruluk değerini veren model %97,34 ile Gradient Boosting olmuştur.
+![image](https://user-images.githubusercontent.com/96024765/166563178-75ca3f85-9cac-4e47-aca4-92859b7aeca0.png)
+
+
+
+
+
+ 
+
+
+
+
